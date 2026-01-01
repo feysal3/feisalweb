@@ -1,0 +1,19 @@
+<!-- Example focus ()  -->
+ 
+<!DOCTYPE html> 
+<html> 
+  <head> 
+    <title>jQuery Demo</title> 
+    <script src="jquery-3.7.1.min.js"></script> 
+    <script type="text/javascript"> 
+      $(document).ready(function () { 
+      $("input").focus(function () { 
+          $(this).css("background-color", "yellow"); 
+        }); 
+      }); 
+    </script> 
+  </head> 
+  <body> 
+    Name: <input type="text" /> 
+  </body> 
+</html> 

@@ -1,0 +1,25 @@
+<!-- Example Key down and Key up event  -->
+
+<!DOCTYPE html> 
+<html> 
+<head> 
+<title>jquery Demo</title> 
+<script src="jquery-3.7.1.min.js"></script> 
+<script type="text/javascript"> 
+$ (document).ready(function () { 
+$("input").keydown(function () { 
+$ ("input").css("background-color", "green");  
+}); 
+$("input").keyup(function () { 
+$("input").css("background-color", "yellow"); 
+}); 
+}); 
+</script> 
+</head> 
+<body> 
+Name: <input type="text" /> 
+</body> 
+</html> 
+  
+
+ 
