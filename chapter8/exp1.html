@@ -1,0 +1,24 @@
+<!-- Example Click Event  -->
+
+<!DOCTYPE html> 
+<html> 
+<head> 
+<title>jquery Demo</title> 
+<script src="jquery-3.7.1.min.js"></script> 
+<script type="text/JavaScript"> 
+$(document).ready(function () { 
+$("#hide").click(function () { 
+$('p').hide() 
+}); 
+$('#show').click(function(){
+    $('p').show()
+})
+}); 
+</script> 
+</head> 
+<body> 
+<input type="submit" id="hide" value="Hide"/> 
+<input type="submit" id="show" value="Show"/> 
+<p>Hide or show Effects</p>
+</body> 
+</html> 
