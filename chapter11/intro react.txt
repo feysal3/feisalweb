@@ -1,0 +1,101 @@
+Waa maxay React JS?
+
+React JS waa library JavaScript ah oo loogu talagalay in lagu dhiso user interfaces (UI) oo interactive ah, taas oo ka dhigan in webpage-kaagu uu si fudud u beddeli karo muuqaalka iyadoo aan la cusbooneysiin bogga oo dhan.
+
+Waxaa sameeyay Facebook 2013
+
+Waxaa loo adeegsadaa single-page applications (SPA)
+
+Waxaa loo isticmaalaa bogagga waaweyn sida Facebook, Instagram, WhatsApp Web
+
+Faa’iidooyinka React:
+
+Waxay fududeysaa dib-u-isticmaalka code-ka (components)
+
+Waxay hagaajisaa xawaaraha browser-ka
+
+Waxay fududeysaa state management iyo data flow
+
+2️.SX (JavaScript XML)
+
+React wuxuu isticmaalaa JSX, taas oo kuu oggolaaneysa inaad HTML ku qorto JS gudaha.
+
+Tusaale:
+
+const element = <h1>Hello, World!</h1>;
+
+
+JSX waa syntax extension oo React u turjumo JavaScript caadi ah
+
+Browser-ka toos uma fahmi karo → React + bundler ayaa turjuma
+
+3️.Components (Qaybaha React)
+
+React wuxuu ku shaqeeyaa components (qaybo yaryar oo webpage ah), kuwaas oo dib loo isticmaali karo.
+
+a) Function Component
+function Greeting(props) {
+    return <h1>Hello, {props.name}!</h1>;
+}
+
+// Isticmaal
+<Greeting name="Idman" />
+
+
+Waxaad isticmaali kartaa props si aad xog ugu dirto component-ka
+
+Waxay ka shaqeysaa UI static ama dynamic
+
+b) Class Component
+import React, { PureComponent } from "react";
+
+class MyPureComponent extends PureComponent {
+    render() {
+        return <div>{this.props.name}</div>;
+    }
+}
+
+
+Waxay isticmaashaa this.props
+
+PureComponent → React wuxuu yareeyaa render-ka haddii wax aan isbedelin
+
+4️.State & useEffect
+Counter Example (Function Component)
+import { useState, useEffect } from "react";
+
+function Counter() {
+    const [count, setCount] = useState(0);
+
+    useEffect(() => {
+        document.title = `You clicked ${count} times`;
+    }, [count]);
+
+    return (
+        <div>
+            <p>You clicked {count} times</p>
+            <button onClick={() => setCount(count + 1)}>Click me</button>
+        </div>
+    );
+}
+
+
+useState → keydinta xogta component-ka
+
+useEffect → waxa la sameeyo marka state ama props isbeddelo (side effect)
+
+5️.Props & Data Flow
+
+Props → xog loo diraa component
+
+State → xog gudaha component-ka lagu keydiyo
+
+Data flow → React waa one-way (hal jiho)
+
+Tusaale Props:
+
+function User(props) {
+    return <h2>User: {props.username}</h2>;
+}
+
+<User username="Idman" />
