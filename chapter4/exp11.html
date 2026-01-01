@@ -1,0 +1,21 @@
+<!-- Object constructor -->
+ <!DOCTYPE html>
+<html>
+<head>
+  <title>Java Script Demo</title>
+</head>
+<body>
+  <script>
+    function student(id, name, batch) {
+      this.id = id;
+      this.name = name;
+      this.batch = batch;
+    }
+
+    s = new student(103, "Ahmed", 4);
+    document.write(s.id + " " + s.name + " " + s.batch);
+  </script>
+</body>
+</html>
+
+
