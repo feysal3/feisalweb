@@ -1,0 +1,25 @@
+<!-- on key up  -->
+<!DOCTYPE html> 
+<html> 
+<head> 
+<title>Java Script Demo</title> 
+<style> 
+div { 
+height: 50px; 
+width: 50px; 
+background: red; 
+border: 1px solid #F00; 
+} 
+</style> 
+<script> 
+function my() { 
+var x = document.getElementById("fname"); 
+x.value = x.value.toUpperCase(); 
+} 
+</script> 
+</head> 
+<body> 
+<label>Enter your Name</label> 
+<input type="text" id="fname" onkeyup="my()"> 
+</body> 
+</html> 

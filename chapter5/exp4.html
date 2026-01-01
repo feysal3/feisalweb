@@ -1,0 +1,31 @@
+<!-- onmouseover and onmouseout -->
+ 
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Java Script Demo</title>
+  <style>
+    div {
+      height: 50px;
+      width: 50px;
+      background: red;
+      border: 1px solid #F00;
+    }
+  </style>
+  <script>
+    function large(x) {
+      x.style.height = "100px";
+      x.style.width = "100px";
+    }
+
+    function normal(x) {
+      x.style.height = "32px";
+      x.style.width = "32px";
+    }
+  </script>
+</head>
+<body>
+  <div onmouseover="large(this)" onmouseout="normal(this)">
+  </div>
+</body>
+</html>

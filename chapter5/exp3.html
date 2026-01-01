@@ -1,0 +1,22 @@
+<!-- Mouse Down / Mouse Up -->
+ <!DOCTYPE html>
+<html>
+<head>
+  <title>Java Script Demo</title>
+  <script>
+    function Down() {
+      document.getElementById("myP").style.color = "red";
+    }
+
+    function Up() {
+      document.getElementById("myP").style.color = "green";
+    }
+  </script>
+</head>
+<body>
+  <p id="myP" onmousedown="Down()" onmouseup="Up()">
+    Test
+  </p>
+</body>
+</html>
+

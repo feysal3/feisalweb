@@ -1,0 +1,27 @@
+<!-- Disabling the right click on web page  -->
+<!DOCTYPE html> 
+<html> 
+<head> 
+  <title>Java Script Demo</title> 
+  <style> 
+    div { 
+      height: 50px; 
+      width: 50px; 
+      background: red; 
+      border: 1px solid #F00; 
+    } 
+  </style> 
+  <script> 
+    function disableclick() { 
+      if(event.button==2) { 
+        alert("Right Click Disabled"); 
+        return false; 
+      } 
+    } 
+  </script> 
+</head> 
+<body> 
+  <div onMouseDown="disableclick()"> 
+  </div> 
+</body> 
+</html>

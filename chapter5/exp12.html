@@ -1,0 +1,27 @@
+<!-- Copy and Paste event  -->
+<!DOCTYPE html> 
+<html> 
+<head> 
+  <title>Java Script Demo</title> 
+  <script> 
+    function paste() { 
+      document.getElementById("demo").innerHTML = "You pasted text!"; 
+    } 
+ 
+    function copy() { 
+      document.getElementById("demo").innerHTML = "You Copied text!"; 
+    } 
+  </script> 
+</head> 
+<body> 
+ 
+  <input type="text" onpaste="paste()"  
+  value="Try to paste something in here" size="40"> 
+ 
+  <input type="text" oncopy="copy()"  
+  value="Try to copy this text"> 
+ 
+  <p id="demo"></p> 
+ 
+</body> 
+</html>
