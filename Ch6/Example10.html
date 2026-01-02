@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heading Formats</title>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+$(document).ready(function() {
+$('#myTable').find('th').css({
+    'background-color': '#f0f0f0',
+    'text-align': 'center'
+});
+$('#myTable tbody tr:even').css('font-weight', 'bold');
+$('#myTable tbody tr:odd').css('font-style', 'italic');
+});
+    </script>
+</head>
+<body>
+   <table id="myTable">
+
+<thead>
+
+<tr>
+
+<th>SQN</th>
+<th>Name</th>
+<th>location</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>1</td>
+<td>Ali</td>
+<td>Hodan</td>
+
+</tr>
+
+<tr>
+
+<td>2</td>
+<td>Ahmed</td>
+<td>Shibis</td>
+
+</tr>
+</tbody>
+ </table>
+</body>
+</html>
